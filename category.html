@@ -1,97 +1,150 @@
-<main class="p-4">
-  <h2 class="text-xl font-semibold mb-4 text-center">Top Categories</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imara Market - Categories</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+    }
 
-    <!-- Category Cards -->
-    <div class="text-center">
-      <img src="images/property.png" alt="Property" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Property</p>
-    </div>
+    header {
+      background-color: #ff5722;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
 
-    <div class="text-center">
-      <img src="images/services.png" alt="Services" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Services</p>
-    </div>
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
 
-    <div class="text-center">
-      <img src="images/jobs.png" alt="Jobs" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Jobs</p>
-    </div>
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-    <div class="text-center">
-      <img src="images/vehicles.png" alt="Vehicles" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Vehicles</p>
-    </div>
+    .category-item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
 
-    <div class="text-center">
-      <img src="images/leisure.png" alt="Leisure" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Leisure & Activities</p>
-    </div>
+    .category-item:hover {
+      transform: scale(1.05);
+    }
 
-    <div class="text-center">
-      <img src="images/cvs.png" alt="CVs" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Seeking Work & CVs</p>
-    </div>
+    .category-item img {
+      max-width: 100%;
+      height: 100px;
+      object-fit: contain;
+    }
 
-    <div class="text-center">
-      <img src="images/shoes.png" alt="Shoes" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Shoes</p>
-    </div>
+    .category-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
 
-    <div class="text-center">
-      <img src="images/drinks.png" alt="Drinks" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Drinks</p>
-    </div>
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
 
-    <div class="text-center">
-      <img src="images/appliances.png" alt="Appliances" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Appliances</p>
-    </div>
+  <header>
+    <h1>IMARA MARKET - CATEGORIES</h1>
+  </header>
 
-    <div class="text-center">
-      <img src="images/others.png" alt="Others" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Others</p>
-    </div>
-
-    <div class="text-center">
-      <img src="images/home_kitchen.png" alt="Home & Kitchen" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Home & Kitchen</p>
-    </div>
-
-    <div class="text-center">
-      <img src="images/phones.png" alt="Phones" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Phones & Accessories</p>
-    </div>
-
-    <div class="text-center">
-      <img src="images/computers.png" alt="Computers" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Computers & Accessories</p>
-    </div>
-
-    <div class="text-center">
-      <img src="images/watches.png" alt="Watches" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Watches & Jewelry</p>
-    </div>
-
-    <div class="text-center">
-      <img src="images/tv_audio.png" alt="TV" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">TV & Audio</p>
-    </div>
-
-    <div class="text-center">
-      <img src="images/gaming.png" alt="Gaming" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Gaming</p>
-    </div>
-
-    <div class="text-center">
-      <img src="images/health_beauty.png" alt="Health" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Health & Beauty</p>
-    </div>
-
-    <div class="text-center">
-      <img src="images/baby.png" alt="Baby" class="w-16 h-16 mx-auto">
-      <p class="mt-2 text-sm">Baby Products</p>
-    </div>
-
+  <div class="category-grid">
+    <a href="property.html" class="category-item">
+      <img src="images/property.png" alt="Property">
+      <p>Property</p>
+    </a>
+    <a href="services.html" class="category-item">
+      <img src="images/services.png" alt="Services">
+      <p>Services</p>
+    </a>
+    <a href="jobs.html" class="category-item">
+      <img src="images/jobs.png" alt="Jobs">
+      <p>Jobs</p>
+    </a>
+    <a href="vehicles.html" class="category-item">
+      <img src="images/vehicles.png" alt="Vehicles">
+      <p>Vehicles</p>
+    </a>
+    <a href="leisure.html" class="category-item">
+      <img src="images/leisure.png" alt="Leisure">
+      <p>Leisure</p>
+    </a>
+    <a href="cvs.html" class="category-item">
+      <img src="images/cvs.png" alt="CVs">
+      <p>Seeking Work / CVs</p>
+    </a>
+    <a href="shoes.html" class="category-item">
+      <img src="images/shoes.png" alt="Shoes">
+      <p>Shoes</p>
+    </a>
+    <a href="drinks.html" class="category-item">
+      <img src="images/drinks.png" alt="Drinks">
+      <p>Drinks</p>
+    </a>
+    <a href="appliances.html" class="category-item">
+      <img src="images/appliances.png" alt="Appliances">
+      <p>Appliances</p>
+    </a>
+    <a href="others.html" class="category-item">
+      <img src="images/others.png" alt="Others">
+      <p>Others</p>
+    </a>
+    <a href="home_kitchen.html" class="category-item">
+      <img src="images/kitchen.png" alt="Home & Kitchen">
+      <p>Home & Kitchen</p>
+    </a>
+    <a href="phones.html" class="category-item">
+      <img src="images/phones.png" alt="Phones">
+      <p>Phones & Accessories</p>
+    </a>
+    <a href="computers.html" class="category-item">
+      <img src="images/computers.png" alt="Computers">
+      <p>Computers & Accessories</p>
+    </a>
+    <a href="watches.html" class="category-item">
+      <img src="images/watch.png" alt="Watches">
+      <p>Watches & Jewelry</p>
+    </a>
+    <a href="tv_audio.html" class="category-item">
+      <img src="images/tv.png" alt="TV">
+      <p>TV & Audio</p>
+    </a>
+    <a href="gaming.html" class="category-item">
+      <img src="images/gaming.png" alt="Gaming">
+      <p>Gaming</p>
+    </a>
+    <a href="health.html" class="category-item">
+      <img src="images/health.png" alt="Health">
+      <p>Health & Beauty</p>
+    </a>
+    <a href="baby.html" class="category-item">
+      <img src="images/baby.png" alt="Baby Products">
+      <p>Baby Products</p>
+    </a>
   </div>
-</main>you 
+
+</body>
+</html>
