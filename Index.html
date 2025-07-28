@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imara Market</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: url(1.jpg) no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .welcome-text {
+      text-align: center;
+      color: #ffffff;
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #1abc9c, 0 0 20px #1abc9c, 0 0 30px #1abc9c;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #1abc9c, 0 0 20px #1abc9c, 0 0 30px #1abc9c;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffc3, 0 0 30px #00ffc3, 0 0 40px #00ffc3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-text">
+    Welcome to Imara Market
+  </div>
+</body>
+</html>
