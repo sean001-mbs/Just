@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <title>imara market</title>
-      <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - Imara Market</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 50px 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: #2c3e50;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #16a085;
+    }
+
+    .btn-alt {
+      background-color: #34495e;
+    }
+
+    .btn-alt:hover {
+      background-color: #2c3e50;
+    }
+  </style>
 </head>
 <body>
-      
-     <div class="wrepper">
-        <dir class="nav">
-              <h2 class="logo">IMARA MARKET</h2>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="category.html">CATEGORY</a></li>
-                <li><a href="message.html">MESSAGE</a></li>
-                <li><a href="cart.html">CART</a></li>
-                <li><a href="account.html">ACCOUNT</a></li>
-            </ul>
-      </dir> 
-   </div>
-
-</body>
-</head>
-
-        <div class="menu">
-          <ul>
-              <li>EAQ</li>
-              <li>SHOP</li>
-              <li>LOG IN</li>
-              <li>SIGN UP</li>
-          </ul>
-        </div>
-
-      <div class="search">
-            <input class="srch" type="search" names"" placeholder="type to text">
-            <a href="#"> <button class="btn"></button></a>
-          </div>
-      
-     </div>
-     <div class="content">
-       <hl>IMARA MARKET</hl>
-       <p>Kenya's boldest campus online shop - explore deals, save items, and vibe with the finest sellers.</p>
-
-      <a href="#" class="cn">BUY NOW - unlock exclusive deals you deserve 🔥</a>
-    
-     <div class="form"
-         <h2>login here</h2>
-         <input type="email" name="email" placeholder="Enter Email Here">
-         <input type="password" name="" placeholder="Enter Password Here">
-         <button class="btn"<a href="#">Login</a></button>
-     </div>
-             <div class="content">
-      <h1>Create Your Account</h1>
-      <p>Join Kenya’s boldest student market platform. It’s fast, free, and fun.</p>
-    <div class="form">
-        <h2>Sign Up</h2>
-        <form action="#" method="post">
-          <input type="text" name="first_name" placeholder="First Name" required>
-          <input type="text" name="second_name" placeholder="Second Name" required>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="text" name="username" placeholder="Username" required>
-          <input type="password" name="password" placeholder="Password" required>
-          <button class="btn" type="submit">Create Account</button>
-        </form>
-        <p>Already have an account? <a href="login.html">Log in here</a></p>
-      </div>
-   
-                   
+  <div class="container">
+    <h1>Welcome to Imara Market</h1>
+    <p>You must log in or sign up to continue</p>
+    <div class="buttons">
+      <a href="login.html" class="btn">Log In</a>
+      <a href="signup.html" class="btn btn-alt">Sign Up</a>
+    </div>
+  </div>
 </body>
 </html>
